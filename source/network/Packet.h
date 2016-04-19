@@ -4,16 +4,16 @@
 
 // std includes
 #include <string>
-#include <vector>
+#include <boost/property_tree/ptree.hpp>
 
 // qt includes
 class Packet
 {
 public:
-    virtual std::string getTag() = 0;
-    virtual void        pack(std::vector<unsigned char>& data) = 0;
-    virtual void        unpack(const std::vector<unsigned char>& data) = 0;
-    virtual void        exec() = 0;
+    virtual std::string			getTag() = 0;
+    virtual void				pack(std::string& data) = 0;
+    virtual void				unpack(const boost::property_tree::ptree& objectTree) = 0;
+    virtual void				exec() = 0;
 };
 
 #endif

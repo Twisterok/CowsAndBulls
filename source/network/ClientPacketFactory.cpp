@@ -1,7 +1,7 @@
-#include <network/ServerPacketManager.h>
+#include <network/ClientPacketFactory.h>
 
 //----------------------------------------------------------
-ServerPacketManager::ServerPacketManager()
+ClientPacketFactory::ClientPacketFactory()
 {
     /*  add some packets here   */
 }
