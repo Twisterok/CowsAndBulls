@@ -27,5 +27,20 @@ void	SignUp::unpack(const boost::property_tree::ptree& objectTree)
 }
 void	SignUp::exec()
 {
-	
+
+}
+
+void    SignUp::setLogin(string login)
+{
+    m_login = login;
+}
+
+void    SignUp::setPwd(string pwd)
+{
+    m_pwd = pwd;
+}
+
+void    SignUp::setConfirmPwd(string confirmPwd)
+{
+    m_confirmPwd = confirmPwd;
 }

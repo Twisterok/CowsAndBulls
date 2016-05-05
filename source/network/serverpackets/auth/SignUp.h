@@ -16,6 +16,9 @@ class  SignUp : public Packet
 	string m_pwd;
 	string m_confirmPwd;
 public:
+    void                setLogin(string login);
+    void                setPwd(string pwd);
+    void                setConfirmPwd(string confirmPwd);
 	std::string			getTag()	override;
 	void				pack(std::string& data)	override;
 	void				unpack(const boost::property_tree::ptree& objectTree) override;
